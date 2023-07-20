@@ -1,0 +1,45 @@
+extends base.pug
+
+block scripts
+    script(src="/static/admission.js") 
+
+block style 
+    style 
+        include ../static/base.css
+        include ../static/admission.css
+
+block content
+    form(action="/admission", method="post", id="admission")
+        section#admissionSection 
+            h1 Apply now!!!
+            input(type="text", name="name", placeholder="Enter your name")
+
+            input(type="email", name="email", placeholder="Enter your email")
+
+            div 
+                h6 Gender:
+                div#genderbox
+                    div
+                        h6 Female
+                        input(type="radio", name="gender")
+                    div 
+                        h6 Male 
+                        input(type="radio", name="gender")
+
+            input(type="text", name="degree", placeholder="Which degree you want to apply?")
+
+            input(type="number", name="marks10th", placeholder="Enter your grade 10 marks")
+
+            input(type="number", name="marks12th", placeholder="Enter your grade 12 marks")
+
+            input(type="float", name="jeepercentile", placeholder="Your jee percentile")
+
+            textarea(name="more", cols="30", rows="20", placeholder="Tell us more about yourself") 
+
+            input(type="submit", name="btn", id="btn")
+            
+
+
+
+
+        

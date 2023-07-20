@@ -1,0 +1,79 @@
+#admissionSection{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    
+    
+
+}
+
+#admissionSection h1{
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    margin: 20px;
+}
+
+
+
+@media (min-width:400px){
+    #admissionSection{
+        height: 140vh;
+        
+    }    
+    
+}
+
+#admissionSection::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: url('../static/images/liabrary.jpg') no-repeat center center/cover
+}
+
+#admissionSection > input, textarea{
+    padding: 15px;
+    margin: 20px;
+    width: 50%;
+    border: 3.5px solid #be7879;
+    border-radius: 10px;
+
+}
+
+#admissionSection #btn{
+    width: 10%;
+    padding: 15px;
+    margin: 20px;
+    border: 3.5px solid #be7879;
+    border-radius: 10px;
+
+}
+
+
+
+#admissionSection > div{   
+    width: 50%;  
+    display: flex;
+}
+
+#admissionSection > div h6{   
+    font-size: 1.5rem; 
+    font-weight: 300;
+    color: white;
+}
+
+#admissionSection > div #genderbox{   
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 30px;
+    width: 30%;
+}
+
+#admissionSection > div #genderbox div{
+    display: flex;
+}

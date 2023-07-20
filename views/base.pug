@@ -1,0 +1,22 @@
+//- layout.pug
+doctype html
+html
+  head
+    title Vidya Sagar University
+    block scripts
+    block style
+        style
+            include ../static/base.css
+  body
+    nav#navbar
+        section#logo
+            img(src="/static/logo1.png", class="logoimg")
+        
+        section#ul-list
+            ul 
+                li #[a(href="/") Home] 
+                li #[a(href="/courses") Courses]  
+                li #[a(href="/admission") Admission] 
+                li #[a(href="/") Contact Us]
+    block content
+    block foot

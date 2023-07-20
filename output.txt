@@ -1,0 +1,8 @@
+The name of the client is Bhawna, 
+    email: bhawna@gmail.com, 
+    gender: on,
+    degree he wants to apply for: btech,
+    his class 10 marks: 234,
+    his class 12 marks: 678,
+    his JEE percentile: 90.
+    More about him/her:  ,jbvgc

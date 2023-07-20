@@ -1,0 +1,58 @@
+#universityWelcome{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    /* background-color: black; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#universityWelcome::before{
+    content: "";
+    background-color: black;
+    background: url('../static/images/placements.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.9;
+    position:absolute;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+@media only screen and (max-width:800px){
+    #navbar{
+        flex-direction: column;
+    }
+    
+}
+@media only screen and (min-width:800px){
+    #navbar{
+        flex-direction: row;
+    }
+    
+}
+
+#universityWelcome h1,h2{
+    
+    color: rgb(108 92 92);
+    font-weight:bold;
+    text-align: center;
+    
+}
+
+#universityWelcome h1{
+    position: relative;
+    bottom: 10vh;
+    font-size: 4rem;
+}
+
+#universityWelcome h2{
+    font-size: 2rem;
+    position: relative;
+    bottom: 10vh;
+}
+
+
